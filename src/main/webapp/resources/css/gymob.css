@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+.printaPC{	
+	display: inline;
+}
+.printaCEL{
+	display: none;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 240px;
+  background-color: #f7f7f7;
+}
+.footer {
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  height: 160px;
+  line-height: 80px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+.footer p{	
+  margin-bottom:0px;
+}
+.posheader{
+	height: 1em;
+}
+.alert-danger{
+	border-radius: 0px !important;
+}
+/* LOADING */
+
+
+.loading-modal {
+    background-color: rgba(255, 255, 255, .8);
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+}
+
+.loading-table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+body.loading .loading-modal {
+    display: block
+}
+
+/* */
+.titulo{
+	padding-bottom: 4em;
+}
+.cardtreino{
+	margin-right: 1em;
+	margin-left: 1em;
+	flex: 0 0 calc(33.3333333333% - 2em);
+}
+.treino a:link, a:visited,a:hover,a:active{	
+	text-decoration: none !important;
+}
+
+
+/* Alterações pro CEL */
+@media (max-width: 1210px) {
+		
+	.printaPC{
+		display: none;
+	}	
+	.printaCEL{
+		display: inline;
+	}
+	
+		
+	.cardtreino{
+		margin-right: 1em;
+		margin-left: 1em;
+		flex: auto;
+	}
+	
+}
