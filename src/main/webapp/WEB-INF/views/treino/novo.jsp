@@ -9,7 +9,7 @@
 			<h2>Ficha de Treino</h2>
 			<hr>
 					
-			<form:form action="/meutreino/salvar" method="post"  >
+			<form:form action="/meutreino/salvar" method="POST"  >
 				<div class="form-group row">
 					<label for="nome" class="col-sm-1 col-form-label">
 						Descrição:

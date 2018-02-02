@@ -18,7 +18,7 @@
 					<div class="col-sm-12">
 						<input type="text" class="form-control" id="descricao" name="descricao" disabled
 						value="${treino.descricao }"
-							placeholder="Treino A">
+							placeholder="Ex: Treino A">
 					</div>
 				</div>	
 				<hr>		
@@ -50,10 +50,8 @@
 								placeholder="10">
 						</div>
 					</div>	
-				<br>
 				<hr>
-				<button type="submit" class="btn btn-info btn-lg btn-block" >Salvar</button>
-				<button type="reset" class="btn btn-primary btn-lg btn-block">Limpar</button>
+				<button type="submit" class="btn btn-info btn-lg btn-block" >Adicionar</button>
 			</form:form>
 	</div>
 </tags:pageTemplate>

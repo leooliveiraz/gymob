@@ -18,9 +18,11 @@
 		<div class="row">
 
 			<c:forEach items="${listaTreino }" var="t">
+			
+            	<a href="/meutreino/${t.id}" id="link${t.id}" ></a>  
 				<div class="card text-white bg-info mb-3 col-lg-4 cardtreino" 
-					onclick="window.open('/meutreino/${t.id}');"
-					on>
+					onclick="document.getElementById('link${t.id}').click();"
+					>
 					<div class="card-header">
 						<strong>${t.descricao} </strong>
 					</div>

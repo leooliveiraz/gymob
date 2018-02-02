@@ -35,7 +35,7 @@ public class TreinoController {
 		return mv;
 	}
 	
-	@RequestMapping(name="/salvar",method=RequestMethod.POST)
+	@RequestMapping(value="/salvar",method=RequestMethod.POST)
 	public ModelAndView salvar(Treino treino ,RedirectAttributes redirectAttributes) {
 		try {
 			treinoService.salvar(treino);		
@@ -48,13 +48,23 @@ public class TreinoController {
 			return mv;
 		}
 	}
-	
+
 
 	@RequestMapping("/{idTreino}")
 	public ModelAndView treino(@PathVariable Long idTreino) {
 		ModelAndView mv = new ModelAndView("treino/treino");
 		Treino treino = treinoService.buscarId(idTreino);
 		mv.addObject("treino",treino);
+		return mv;
+	}
+
+
+	@RequestMapping("/addexercicio")
+	public ModelAndView treino(RedirectAttributes redirectAttributes) {
+		ModelAndView mv = new ModelAndView("treino/treino");
+		Treino treino = treinoService.buscarId(idTreino);
+		mv.addObject("treino",treino);
+		redirectAttributes.addFlashAttribute("sucesso","Adicionado Exercício");
 		return mv;
 	}
 	
