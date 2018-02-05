@@ -86,9 +86,10 @@ body.loading .loading-modal {
 	
 		
 	.cardtreino{
-		margin-right: 1em;
-		margin-left: 1em;
-		flex: auto;
+		padding-top: 1em;
+		margin:0px;
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
 	}
 	
 }

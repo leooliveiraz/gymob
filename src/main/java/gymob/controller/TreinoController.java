@@ -59,8 +59,8 @@ public class TreinoController {
 	}
 
 
-	@RequestMapping("/addexercicio")
-	public ModelAndView treino(RedirectAttributes redirectAttributes) {
+	@RequestMapping(value="/addexercicio",method=RequestMethod.POST)
+	public ModelAndView treino(RedirectAttributes redirectAttributes,Long idTreino) {
 		ModelAndView mv = new ModelAndView("treino/treino");
 		Treino treino = treinoService.buscarId(idTreino);
 		mv.addObject("treino",treino);

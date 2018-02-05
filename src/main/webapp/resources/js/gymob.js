@@ -20,3 +20,7 @@ $("#imagem_principal").on('change', function () {
         alert("Este navegador nao suporta FileReader.");
     }
 });
+
+function carregarModal(){
+	$('#modalCarregar').modal('show'); 
+}
